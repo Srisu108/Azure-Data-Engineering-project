@@ -36,31 +36,26 @@ The main objective is to build an understanding of data ingestion, data cleaning
 
 The project follows the Medallion Architecture.
 
+```mermaid
+flowchart TD
+    A["GitHub CSV Files<br/>5 Netflix datasets"]
+    B["Python Ingestion<br/>requests + pandas"]
+    C["Spark DataFrames"]
+    D["Bronze Layer<br/>Delta Tables"]
+    E["Silver Layer<br/>Cleaned Delta Tables"]
+    F["Gold Declarative Pipeline"]
 
-Netflix CSV Files on GitHub
-            |
-            v
-     Python Ingestion
-   (requests + pandas)
-            |
-            v
-    Spark DataFrames
-            |
-            v
-     Bronze Layer
-       Delta Tables
-            |
-            v
-     Silver Layer
-  Cleaned and Standardised
-       Delta Tables
-            |
-            v
-      Gold Layer
-  Business-Ready Datasets
-            |
-            v
-   Databricks SQL Queries
+    G["Titles by Type"]
+    H["Titles by Release Year"]
+    I["Titles by Category"]
+    J["Titles by Country"]
+
+    A --> B --> C --> D --> E --> F
+    F --> G
+    F --> H
+    F --> I
+    F --> J
+```
 
 
 **Current implementation:** The CSV ingestion uses Python to retrieve files from GitHub, pandas to read the CSV content, and Spark to create DataFrames before writing Delta tables.
