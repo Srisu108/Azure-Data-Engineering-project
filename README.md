@@ -318,20 +318,6 @@ Project repository:
 
 [Azure-Data-Engineering-project](https://github.com/Srisu108/Azure-Data-Engineering-project)
 
-```
 
-## Step 2: Check one detail before publishing
-
-I included `netflix_titles_silver.csv` in the proposed Silver output structure, but I haven't confirmed that this file exists in your local `silver/output/` folder.
-
-**Before committing the README, please check your actual `silver/output/` folder in VS Code.** If `netflix_titles_silver.csv` is not there, remove that line from the README's repository tree.
-
-Also, the README describes the pipeline accurately: it manages the four Gold transformations, but ingestion and Bronze/Silver processing are still separate steps.
-
-## Step 3: Save the README
-
-1. Save the file as `README.md` in your repository root.
-2. Review the file in VS Code's Markdown preview.
-3. Check that the folder names and table names match your actual project.
 
 
