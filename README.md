@@ -1,4 +1,5 @@
-# # Netflix Data Engineering Project with Databricks, PySpark & Delta Lake
+# Netflix Data Engineering Project with Databricks, PySpark & Delta Lake
+
 
 ## Project Overview
 
