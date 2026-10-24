@@ -1,4 +1,8 @@
-# Netflix Data Engineering Project
+# # Netflix Data Engineering Project with Databricks, PySpark & Delta Lake
+
+## Project Overview
+
+This project demonstrates a data engineering workflow using Netflix datasets. It uses Python, pandas, PySpark, Databricks, and Delta Lake to ingest source data, create Bronze and Silver tables, and build Gold-layer analytical datasets using a Databricks declarative pipeline.
 
 ## Project Overview
 
